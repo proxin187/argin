@@ -12,8 +12,8 @@ A very simple command line argument parser.
     <a href="#getting-started">Getting Started</a>
     <ul>
     <li><a href="#Usage">Usage</a></li>
-    <li><a href="#Example">Usage</a></li>
-    <li><a href="#Functions">Usage</a></li>
+    <li><a href="#Example">Example</a></li>
+    <li><a href="#Functions">Functions</a></li>
     </ul>
 </li>
 <li><a href="#Help">Help</a></li>
@@ -33,7 +33,7 @@ Argin is a very simple library with only 5 functions but its still able to do al
 #### Example
 `./program [file] [-format (name)]`
 would look like this:
-```
+```rust
 use argin::Argin;
 
 let arg = Argin::new();
@@ -47,11 +47,26 @@ let format = arg.values.get("-format").unwrap();
 
 #### Functions
 
-new: `pub fn new() -> Argin`
-add_flag: `pub fn add_flag(&mut self, flag: &str)`
-add_value: `pub fn add_value(&mut self, name: &str)`
-add_positional_arg: `pub fn add_positional_arg(&mut self)`
-parse: `pub fn parse(&self) -> Argin`
+new:
+```
+pub fn new() -> Argin
+```
+add_flag:
+```
+pub fn add_flag(&mut self, flag: &str)
+```
+add_value:
+```
+pub fn add_value(&mut self, name: &str)
+```
+add_positional_arg:
+```
+pub fn add_positional_arg(&mut self)
+```
+parse:
+```
+pub fn parse(&self) -> Argin
+```
 
 ## Help
 
