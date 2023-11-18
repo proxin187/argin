@@ -1,6 +1,7 @@
 
 
 config() {
+    echo ""
 }
 
 build() {
