@@ -1,0 +1,9 @@
+
+
+config() {
+}
+
+build() {
+    cargo build
+}
+
