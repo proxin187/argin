@@ -1,5 +1,9 @@
 
 
+dependencies() {
+    echo ""
+}
+
 config() {
     echo ""
 }
